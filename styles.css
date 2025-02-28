@@ -56,3 +56,11 @@ body {
 .main-content strong {
     font-weight: bold;
 }
+.profile-image {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 50%; /* Optional: for a circular image */
+}
