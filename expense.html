@@ -35,5 +35,19 @@
   </div>
 
   <script src="script.js"></script>
+  <script>
+    function calculateExpenses() {
+  const rent = parseFloat(document.getElementById('rent').value) || 0;
+  const groceries = parseFloat(document.getElementById('groceries').value) || 0;
+  const transport = parseFloat(document.getElementById('transport').value) || 0;
+  const utilities = parseFloat(document.getElementById('utilities').value) || 0;
+  const others = parseFloat(document.getElementById('others').value) || 0;
+
+  const total = rent + groceries + transport + utilities + others;
+
+  document.getElementById('result').innerText = `Total Monthly Expense: ₹${total.toFixed(2)}`;
+}
+
+  </script>
 </body>
 </html>
